@@ -22,7 +22,8 @@ cat test.log
 ssh-keygen -t rsa -C "youremail@example.com"  # 获取生产 ssh_keys
 
 #_____________基础命令________________#
-
+dpkg-reconfigure tzdata  # change time china
+top  # cpu  ram
 reboot
 #重启
 sudo apt-get updeta
