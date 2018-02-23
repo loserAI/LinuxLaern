@@ -12,7 +12,7 @@ my_sender = '1016255338@qq.com' #发件人邮箱账号，为了后面易于维�
 my_user = 'darren3raffey@outlook.com' #收件人邮箱账号，为了后面易于维护，所以写成了变量
 my_psw = "lypjrckrgeavbdja"
 
-def mail(str_s, picture_name):
+def email(str_s, picture_name):
      ret = True
      try:
           print(1)
@@ -49,22 +49,22 @@ def mail(str_s, picture_name):
      else:
           print("filed")  #如果发送失败则会返回filed
 
-def sendmail(picture_name,run_log):
+def sendemail(picture_name,run_log):
      html ="""
 <html> 
 <head>返回状态</head> 
 <body>
-<p style="line-height:0.9"> <br>..I.<br>\&nbsp;|<br>&nbsp;||<br>run_log :</p>
-<p>%s</p> // log
-<p><img src="cid:0"></br></p>  // 图片
+<p style="line-height:0.9"> <br>..I.<br>\&nbsp;&nbsp;&nbsp;)<br>&nbsp;|&nbsp;|<br>run_log :</p>
+<p>%s</p> <!-- log -->
+<p><img src="cid:0"></br></p>  <!-- 图片-->
 </body> 
 </html> 
 """%run_log
-     mail(html,picture_name)
+     email(html,picture_name)
 
 if __name__ == '__main__':
      print('这是测试________________________________________________')
-     sendmail('test','test code 测试代码')
+     # sendemail('test','test code 测试代码')
      
 
 
